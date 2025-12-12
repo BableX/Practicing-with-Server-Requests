@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a3d91, #3dbdff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+
+.search-box {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+#result {
+    max-width: 1100px;
+    width: 100%;
+}
+
+#result .col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+</style>
+<body class="p-4">
+
+    <div class="input-group mb-3" style="max-width: 400px;">
+        <input type="text" id="user_input" class="form-control" placeholder="Введите слово...">
+        <button id="btn" class="btn btn-primary">Поиск</button>
+    </div>
+
+    <div id="result" class="row gy-4">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
